@@ -8,9 +8,8 @@
 
 library(lme4)
 
-setwd("~/Documents/schnable_lab/moon_phase")
-source("rsquaredglmm.R")
-moon <- read.csv("final_all.csv")
+source("lib/rsquaredglmm.R")
+moon <- read.csv("data/final_all.csv")
 
 # Structures to hold results
 r2marg <- data.frame(trait=vector(), r2marg=vector(), r2cond=vector())
